@@ -1,0 +1,398 @@
+.reasons-section, .hero-section, .booking-section, .smoothies-section {
+  background-color: #000000;  /* or your desired dark shades */
+  color: white;
+  width: auto;
+  height: auto;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;   
+  height: 38rem;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0.219)),
+    url('./assets/images/background.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    /* max-width: 100%; */
+    color: white;
+    z-index: 2;
+}
+
+.hero-header {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.span1 {
+    color: #36ee1e;
+    font-weight: bold;
+}
+
+.span2 {
+    color: orange;
+    font-weight: bold;
+}
+
+.hero-text {
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 36px;
+}
+
+.order-now-btn {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #33ff00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.order-now-btn {
+    text-decoration: none;
+    color: black;
+}
+
+.order-now-btn:hover {
+    box-shadow: 0 0 20px #33ff00;  
+    color: white;
+}
+
+.custom-green {
+    color: #33ff00;
+}
+
+/* Reasons */
+
+.section-header {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.section-head {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.reasons-card-container {
+  justify-content: center;
+  align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.reason-card {
+  width: auto;
+  height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    transition: 0.5s ease-in-out;
+}
+
+
+.card-head {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.fresh:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 0 10px #33ff00;
+}
+
+.time:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 0 10px orange;
+}
+
+.customize:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 0 10px #ff33ff;
+}
+
+/* Smoothies */
+
+.smoothie-container {
+  width: 100%;
+    background: #3130303f;
+}
+
+/* Booking */
+
+.booking-tab {  
+    background: #3130303f;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 90%;
+    height: 3rem;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.pickup, .tel {
+    margin-top: 50px;
+}
+
+.confirm-booking-btn {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #33ff00;
+    font-weight: bold;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.confirm-booking-btn:hover {
+    color: #33ff00;
+    background: black;
+    box-shadow: 0 0 20px #33ff00;  
+}
+
+
+
+
+
+/* Slide-in base */
+.slide-in-section {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1), opacity 600ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Directions */
+.slide-in-section.slide-left { transform: translateX(-30px); }
+.slide-in-section.slide-right { transform: translateX(30px); }
+.slide-in-section.slide-up { transform: translateY(20px); }
+.slide-in-section.slide-down { transform: translateY(-20px); }
+
+/* Visible state */
+.slide-in-section.is-visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Optional per-section styling */
+.booking-section {
+  /* keep existing booking styles here or add */
+  padding: 1rem;
+}
+
+
+/* ============================
+     MEDIA QUERIES
+   ============================ */
+
+/* ---------- Extra Small Devices (Phones ≤ 480px) ---------- */
+@media (max-width: 480px) {
+
+  .hero-section {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .hero-head {
+    text-align: left;
+    font-size: 60px;
+  }
+
+  .hero-texts {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .order-now-btn {
+    padding: 12px 20px;
+  }
+
+  /* Reasons */
+  .reasons-card-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .reason-card {
+    width: 300%;
+    height: auto;
+  }
+
+  /* Smoothies */
+  .smoothie-card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Booking */
+  .booking-tab {
+    flex-direction: column;
+    width: auto;
+    left: 0;
+    top: 20px;
+    height: auto;
+  }
+
+  .book {
+    width: auto;
+  }
+
+  .input {
+    width: auto;
+  }
+
+  .confirm-booking-btn {
+    width: auto;
+    right: 0;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* ---------- Small Devices (Phones 480px–768px) ---------- */
+@media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-header {
+    font-size: 60px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  /* Reasons */
+  .reason-card-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .reason-card {
+    width: 80%;
+  }
+
+  /* Smoothies */
+  .smoothie-card-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Booking */
+  .booking-tab {
+    flex-direction: column;
+    width: auto;
+    left: 0;
+    height: auto;
+  }
+
+  .input {
+    width: auto;
+  }
+}
+
+
+
+/* ---------- Medium Devices (Tablets 768px–1024px) ---------- */
+@media (max-width: 1024px) {
+
+  .hero-section {
+    padding: 40px;
+    height: auto;
+  }
+
+  .hero-header {
+    font-size: 75px;
+  }
+
+  .reason-card-container {
+    gap: 30px;
+  }
+
+  .reason-card {
+    width: 300px;
+  }
+
+  .booking-tab {
+    width: auto;
+    left: auto; /* remove fixed offset so margin:auto can center */
+  }
+
+  .input {
+    width: auto;
+  }
+}
+
+
+
+/* ---------- Large Laptops (1024px–1440px) ---------- */
+@media (max-width: 1440px) {
+
+  .hero-section {
+    padding: 40px;
+  }
+
+  .hero-header {
+    font-size: 85px;
+  }
+
+  .reason-card {
+    width: 350px;
+  }
+
+  .booking-tab {
+    left: auto; /* remove fixed offset so margin:auto can center */
+    width: 60%;
+  }
+}
+
+
+
+/* ---------- Extra Large Screens (1440px+) ---------- */
+@media (min-width: 1441px) {
+  .hero-header {
+    font-size: 110px;
+  }
+
+  .reason-card {
+    width: 420px;
+  }
+
+  .booking-tab {
+    left: auto;
+    width: 50%;
+  }
+}
+

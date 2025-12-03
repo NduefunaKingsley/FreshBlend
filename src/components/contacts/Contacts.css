@@ -1,0 +1,84 @@
+.contacts {
+    height: 70rem;
+    padding: 90px;
+}
+
+/* Messages */
+
+.contacts-header {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contacts-head {
+    color: orange;
+    text-shadow: 0 0 20px orange;
+    font-size: 3rem;
+}
+
+.contacts-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #aaa8a8;
+}
+
+.message-container {
+    margin: 80px 0;
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.m-tab {
+    width: 45%;
+    border: 1px solid white;
+}
+
+.social-handles {
+    border: none;
+}
+
+.s-tab {
+    text-align: left;
+    padding: 20px;
+    height: 16rem;
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background: lab(18.57% 0.45 0.16 / 0.301);
+}
+
+.s-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.s-head {
+    line-height: 15px;
+}
+
+.s-subtext {
+    letter-spacing: 2px;
+}
+
+.s-text {
+    color: #cac5c5;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.call, .email {
+    margin-top: 40px;
+}
+
+.send-message {
+    border: 1px solid gray;
+    border-radius: 30px;
+}
