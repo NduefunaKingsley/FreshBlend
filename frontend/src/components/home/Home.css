@@ -52,16 +52,13 @@
     background: #33ff00;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
     transition: 0.5s ease-in-out;
 }
 
-.order-now-btn {
-    text-decoration: none;
-    color: black;
-}
-
 .order-now-btn:hover {
-    box-shadow: 0 0 20px #33ff00;  
+    box-shadow: 0 0 20px #186405;  
     color: white;
 }
 
