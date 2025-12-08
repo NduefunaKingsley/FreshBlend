@@ -54,7 +54,29 @@ export default function Messages() {
                     </div>
                 </button>
             </div>
-            <div className='send-message m-tab'></div>
+            <div className='send-message m-tab'>
+                <div className='s-message-header'>
+                    <h1 className='s-message-head'>Send Us A Message</h1>
+                </div>
+                <form className='s-message-form'>
+                    <div className='names'>
+                        <div className='first-name'>
+                            <p className='f-name-head'>First Name</p>
+                            <input type="text" className='first-name-input s-input' placeholder='e.g: John' />
+                        </div>
+                        <div className='last-name'>
+                            <p className='l-name-head'>Last Name</p>
+                            <input type="text" className='last-name-input s-input' placeholder='e.g: Doe' />
+                        </div>
+                    </div>
+                    <div className='others'>
+                        <div className='email-address'>
+                            <p className='email-head'>Email Address</p>
+                            <input type="email" className='email-input s-input' placeholder='e.g: example@gmail.com' />
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
   )
