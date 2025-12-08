@@ -1,4 +1,4 @@
-.story-hero {
+/* .story-hero {
     position: relative;
     top: 10rem;
     color: white;
@@ -99,11 +99,34 @@
     position: absolute;
     top: 26rem;
     left: 32rem;
+} */
+
+.story-hero {
+  position: relative;
+  top: 10rem;
 }
+
+.story-header-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.story-text {
+  margin: 60px 0;
+}
+
+.j-image-container {
+  z-index: 5;
+}
+
+.tag-icon {
+  position: absolute;
+}
+
 
 /* Story Tabs */
 
-.storytabs-container {
+/* .storytabs-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -128,4 +151,22 @@
     line-height: 30px;
     letter-spacing: 1px;
     color: #c9c4c4bd;
+} */
+
+.storytabs-container {
+  color: white;
+}
+
+.story-tab {
+  cursor: pointer;
+  background: #31313128;
+  border: 1px solid rgba(128, 128, 128, 0.788);
+  border-radius: 30px;
+  height: 15rem;
+}
+
+.s-tab-text {
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #c9c4c4bd;
 }
