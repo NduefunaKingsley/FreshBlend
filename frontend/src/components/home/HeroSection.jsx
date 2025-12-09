@@ -12,7 +12,7 @@ export default function HeroSection() {
   >
     <div className="hero-content text-white">
       <h1 className="display-1 fw-bold hero-head">
-        Fresh <span className="text-success fw-bold custom-green">Smoothies</span> Made <br />
+        Fresh <span className="span1 fw-bold custom-green">Smoothies</span> Made <br />
         to <span className="text-warning fw-bold span2">Order</span>
       </h1>
 
@@ -21,7 +21,7 @@ export default function HeroSection() {
         Made with premium ingredients, ready when you are.
       </p>
 
-      <Link to="/menu" className="btn btn-success order-now-btn px-4 py-3 fw-bold">
+      <Link to="/menu" className="roundedbtn btn-success order-now-btn px-4 py-3 fw-bold">
         Order Now
       </Link>
     </div>
