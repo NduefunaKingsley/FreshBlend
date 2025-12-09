@@ -68,6 +68,9 @@ export default function Footer() {
     </p>
   </div>
 </footer>
+<<<<<<< HEAD
 
+=======
+>>>>>>> homepage
   )
 }
