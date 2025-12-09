@@ -2,7 +2,6 @@
     position: relative;
     top: 2rem;
     color: white;
-
 }
 
 .story-heading {
@@ -73,7 +72,7 @@
 }
 
 .rate-head1 {
-    color: orange
+    color: orange;
 }
 
 .rate-head2 {
@@ -90,13 +89,12 @@
 
 .j-image-container {
     height: 31rem;
-    position: relative;
-    z-index: 5;
-    width: 80%;
     border-radius: 30px;
-    background-image: linear-gradient(to left, rgba(20, 20, 20, 0.404), rgba(5, 5, 5, 0.863)), url('../assets/images/Story.svg');
-    background-size: cover;
     border: 1px solid #f7f1f13a;
+    background-image: linear-gradient(to left, rgba(20,20,20,0.4), rgba(5,5,5,0.86)), url('../assets/images/Story.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .tag-icon {
@@ -106,7 +104,6 @@
 }
 
 /* Story Tabs */
-
 .storytabs-container {
     display: flex;
     flex-direction: row;
