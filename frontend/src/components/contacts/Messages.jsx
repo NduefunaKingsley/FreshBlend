@@ -4,80 +4,105 @@ import Email from './assets/images/Email.svg'
 
 export default function Messages() {
   return (
-    <div>
-        <div className='contacts-header'>
-            <h1 className='contacts-head'>Get In Touch</h1>
-            <p className='contacts-text'>Have questions about our fresh smoothies? Want to place a bulk<br /> order? We'd love to hear from you!</p>
-        </div>
-        <div className='message-container'>
-            <div className='social-handles m-tab'>
-                <button className='location s-tab'>
-                    <div className='location-header s-header'>
-                        <div className='location-img s-img'>
-                            <img src={Location} className='location-icon' />
-                        </div>
-                        <div className='location-head s-head'>
-                            <h1 className='location-subhead s-subhead'>Visit Our Store</h1>
-                            <p className='location-subtext s-subtext'>Fresh smoothies made daily</p>
-                        </div>
-                    </div>
-                    <div className='location-text-contain s-contain'>
-                        <p className='location-text s-text'>123 Smoothie Street <br />Fresh Valley, CA902110<br />Accra, Ghana</p>
-                    </div>
-                </button>
-                <button className='call s-tab'>
-                    <div className='call-header s-header'>
-                        <div className='call-img s-img'>
-                            <img src={Call} className='call-icon' />
-                        </div>
-                        <div className='call-head s-head'>
-                            <h1 className='call-subhead s-subhead'>Call Us</h1>
-                            <p className='call-subtext s-subtext'>Monday - Friday</p>
-                        </div>
-                    </div>
-                    <div className='location-text-contain s-contain'>
-                        <p className='location-text s-text'>(+233) 2093 - 03341<br />(+233) 5510 - 06413</p>
-                    </div>
-                </button>
-                <button className='email s-tab'>
-                    <div className='email-header s-header'>
-                        <div className='email-img s-img'>
-                            <img src={Email} className='email-icon' />
-                        </div>
-                        <div className='email-head s-head'>
-                            <h1 className='email-subhead s-subhead'>Email Us</h1>
-                            <p className='email-subtext s-subtext'>Quick respones guaranteed!</p>
-                        </div>
-                    </div>
-                    <div className='email-text-contain s-contain'>
-                        <p className='email-text s-text'>freshblend25@gmail.com <br />kingsleykaycee19@gmail.com</p>
-                    </div>
-                </button>
+    <div className="container py-5 text-white">
+      {/* HEADER */}
+      <div className="text-center mb-5">
+        <h1 className="text-warning fw-bold" style={{ textShadow: "0 0 20px orange" }}>
+          Get In Touch
+        </h1>
+        <p className="text-secondary fs-5">
+          Have questions about our fresh smoothies? Want to place a bulk<br />
+          order? We'd love to hear from you!
+        </p>
+      </div>
+
+      <div className="row g-4">
+        {/* LEFT — CONTACT CARDS */}
+        <div className="col-12 col-lg-6">
+          {/* CARD 1 */}
+          <div className="p-4 mb-4 rounded-4 bg-dark bg-opacity-50 border border-secondary">
+            <div className="d-flex align-items-center gap-3">
+              <img src={Location} className="rounded-circle" width="60" />
+              <div>
+                <h3 className="m-0">Visit Our Store</h3>
+                <p className="text-secondary m-0">Fresh smoothies made daily</p>
+              </div>
             </div>
-            <div className='send-message m-tab'>
-                <div className='s-message-header'>
-                    <h1 className='s-message-head'>Send Us A Message</h1>
+            <p className="text-secondary mt-3 fs-5">
+              123 Smoothie Street <br />
+              Fresh Valley, CA902110 <br />
+              Accra, Ghana
+            </p>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="p-4 mb-4 rounded-4 bg-dark bg-opacity-50 border border-secondary">
+            <div className="d-flex align-items-center gap-3">
+              <img src={Call} className="rounded-circle" width="60" />
+              <div>
+                <h3 className="m-0">Call Us</h3>
+                <p className="text-secondary m-0">Monday - Friday</p>
+              </div>
+            </div>
+            <p className="text-secondary mt-3 fs-5">
+              (+233) 2093 - 03341 <br />
+              (+233) 5510 - 06413
+            </p>
+          </div>
+
+          {/* CARD 3 */}
+          <div className="p-4 rounded-4 bg-dark bg-opacity-50 border border-secondary">
+            <div className="d-flex align-items-center gap-3">
+              <img src={Email} className="rounded-circle" width="60" />
+              <div>
+                <h3 className="m-0">Email Us</h3>
+                <p className="text-secondary m-0">Quick responses guaranteed</p>
+              </div>
+            </div>
+            <p className="text-secondary mt-3 fs-5">
+              freshblend25@gmail.com <br />
+              kingsleykaycee19@gmail.com
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT — FORM */}
+        <div className="col-12 col-lg-6">
+          <div className="p-4 rounded-4 border border-secondary">
+            <h2 className="mb-4">Send Us A Message</h2>
+            <form>
+              <div className="row g-3">
+                <div className="col-12 col-md-6">
+                  <label className="form-label">First Name</label>
+                  <input type="text" className="form-control bg-dark text-white border-secondary" placeholder="e.g: John" />
                 </div>
-                <form className='s-message-form'>
-                    <div className='names'>
-                        <div className='first-name'>
-                            <p className='f-name-head'>First Name</p>
-                            <input type="text" className='first-name-input s-input' placeholder='e.g: John' />
-                        </div>
-                        <div className='last-name'>
-                            <p className='l-name-head'>Last Name</p>
-                            <input type="text" className='last-name-input s-input' placeholder='e.g: Doe' />
-                        </div>
-                    </div>
-                    <div className='others'>
-                        <div className='email-address'>
-                            <p className='email-head'>Email Address</p>
-                            <input type="email" className='email-input s-input' placeholder='e.g: example@gmail.com' />
-                        </div>
-                    </div>
-                </form>
-            </div>
+                <div className="col-12 col-md-6">
+                  <label className="form-label">Last Name</label>
+                  <input type="text" className="form-control bg-dark text-white border-secondary" placeholder="e.g: Doe" />
+                </div>
+                <div className="col-12 col-md-6">
+                  <label className="form-label">Email Address</label>
+                  <input type="email" className="form-control bg-dark text-white border-secondary" placeholder="example@gmail.com" />
+                </div>
+                <div className="col-12 col-md-6">
+                  <label className="form-label">Phone Number</label>
+                  <input type="tel" className="form-control bg-dark text-white border-secondary" placeholder="+233 20 903 341" />
+                </div>
+                <div className="col-12">
+                  <label className="form-label">Your Message</label>
+                  <textarea className="form-control bg-dark text-white border-secondary" rows="5" placeholder="Type your message here..."></textarea>
+                </div>
+                <div className="col-12 mt-3">
+                  <button className="btn w-100 py-3 rounded-pill" style={{ background: "#03fa03", color: "black", fontWeight: "600" }}>
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+
+      </div>
     </div>
   )
 }

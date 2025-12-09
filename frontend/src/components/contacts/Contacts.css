@@ -4,7 +4,6 @@
 }
 
 /* Messages */
-
 .contacts-header {
     text-align: center;
 }
@@ -23,62 +22,15 @@
 
 .message-container {
     margin: 80px 0;
-    height: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-
 }
 
 .m-tab {
     width: 45%;
     border: 1px solid white;
-}
-
-.social-handles {
-    border: none;
-}
-
-.s-tab {
-    text-align: left;
-    padding: 20px;
-    height: 16rem;
-    width: 90%;
-    border: 1px solid gray;
-    border-radius: 30px;
-    background: lab(18.57% 0.45 0.16 / 0.301);
-}
-
-.s-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    color: white;
-}
-
-.s-head {
-    line-height: 15px;
-}
-
-.s-subhead {
-    font-size: 30px;
-}
-
-.s-subtext {
-    letter-spacing: 2px;
-}
-
-.s-text {
-    color: #cac5c5;
-    line-height: 40px;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
-
-.call, .email {
-    margin-top: 40px;
 }
 
 .send-message {
@@ -96,7 +48,7 @@
     margin: 50px 0;
 }
 
-.first-name, .last-name {
+.first-name, .last-name, .email-address {
     text-align: left;
 }
 
@@ -113,6 +65,6 @@
     margin-top: 20px;
 }
 
-.email-address {
-    text-align: left;
+.call, .email {
+    margin-top: 40px;
 }
