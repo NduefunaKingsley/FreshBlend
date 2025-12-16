@@ -93,7 +93,7 @@ export default function Messages() {
                   <textarea className="form-control bg-dark text-white border-secondary" rows="5" placeholder="Type your message here..."></textarea>
                 </div>
                 <div className="col-12 mt-3">
-                  <button className="btn w-100 py-3 rounded-pill" style={{ background: "#03fa03", color: "black", fontWeight: "600" }}>
+                  <button type='submit' className="btn w-100 py-3 rounded-pill" style={{ background: "#03fa03", color: "black", fontWeight: "600" }}>
                     Send Message
                   </button>
                 </div>
