@@ -1,0 +1,115 @@
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.menu-header {
+    text-align: center;
+    color: white;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 70rem;
+    overflow: scroll;
+    margin: 50px 0;
+    padding-left: 55rem;
+}
+
+.menu-tab {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    flex: 0 0 320px;   /* <– prevents shrink and sets base width */
+    min-width: 320px;
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.menu-tab-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-tab-text-area {
+    margin-top: 15px;
+}
+
+.menu-tab-head {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.menu-tab-text {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.menu-tab-btn { 
+    border: none;
+    padding: 10px 20px;
+    color: #2c2c2c;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-tab-item-price {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.menu-tab-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Menu Footer */
+
+.menu-foot-container {
+    background-color: #10fd5f;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.menu-foot-head {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.menu-foot-text {
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.menu-foot-btn {
+    background-color: black;
+    border: none;
+    padding: 12px 25px;
+    color: #10fd5f;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-foot-btn:hover {
+    background-color: #333333;
+    color: #10fd5f;
+    transform: translate(0, -10px);
+}
