@@ -110,12 +110,14 @@ body {
     color: white;
     font-size: 3rem;
     margin-right: 1rem;
+    transition: 0.5s ease-in-out;
 }
 
-<<<<<<< HEAD
-=======
+.nav-cart:hover {
+    color: #33ff00;
+    transform: scale(1.2);
+}
 
->>>>>>> homepage
 /* Media Queries  */
 
 @media (min-width: 992px) {

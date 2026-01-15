@@ -1,4 +1,5 @@
 import { FaOpencart } from "react-icons/fa"; 
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -20,7 +21,7 @@ function NavScrollExample() {
         <Nav.Link href="/contact" className='text-white'>Contacts</Nav.Link>
       </Nav>
       <Form className="d-flex btn-contain">
-        <FaOpencart className="nav-cart" />
+        <Link to="/cart"><FaOpencart className="nav-cart" /></Link>
         <Button variant="nav-btn" className='nav-btn'>Sign In</Button>
       </Form>
     </Navbar.Collapse>
