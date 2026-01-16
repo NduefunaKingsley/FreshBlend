@@ -15,7 +15,7 @@ export default function Smoothies() {
     </div>
 
     <div className="row g-4 justify-content-center smoothie-card-container">
-      <div className="col-12 col-sm-6 col-lg-3">
+      <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
         <Tab
           image={Tropical}
           title="Tropical Paradise"
@@ -26,7 +26,7 @@ export default function Smoothies() {
         />
       </div>
 
-      <div className="col-12 col-sm-6 col-lg-3">
+      <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
         <Tab
           image={Berry}
           title="Berry Blast"
@@ -37,7 +37,7 @@ export default function Smoothies() {
         />
       </div>
 
-      <div className="col-12 col-sm-6 col-lg-3">
+      <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
         <Tab
           image={Green}
           title="Green Goddess"
@@ -48,7 +48,7 @@ export default function Smoothies() {
         />
       </div>
 
-      <div className="col-12 col-sm-6 col-lg-3">
+      <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
         <Tab
           image={Choco}
           title="Choco Power"
