@@ -1,0 +1,16 @@
+body {
+  background-color: #121212; /* dark background */
+}
+
+h2, h4, p {
+  color: white;
+}
+
+.table-dark th, .table-dark td {
+  vertical-align: middle;
+}
+
+.btn {
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Tab({ image, title, text, buttonText, onButtonClick , price }) {
+export default function Tab({ image, title, text, buttonText, onButtonClick, price }) {
   return (
     <div className="tab menu-tab">
       <img
@@ -14,12 +14,12 @@ export default function Tab({ image, title, text, buttonText, onButtonClick , pr
         <p className="tab-text menu-tab-text">{text}</p>
         <div className="tab-btn-container">
           <button
-          onClick={onButtonClick}
-          className="tab-btn menu-tab-btn"
-        >
-          {buttonText}
-         </button>
-         <p className="tab-item-price menu-tab-item-price">{price}</p>
+            onClick={onButtonClick}
+            className="tab-btn menu-tab-btn"
+          >
+            {buttonText}
+          </button>
+          <p className="tab-item-price menu-tab-item-price">{price}</p>
         </div>
       </div>
     </div>
