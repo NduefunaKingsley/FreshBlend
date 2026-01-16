@@ -1,11 +1,13 @@
 import './Home.css'
 import Tab from '../../Tab'
+import { useNavigate } from 'react-router-dom'
 import Tropical from './assets/images/menu/Tropical.svg'
 import Berry from './assets/images/menu/Berry.svg'
 import Green from './assets/images/menu/Green.svg'
 import Choco from './assets/images/menu/Choco.svg'
 
 export default function Smoothies() {
+  const navigate = useNavigate()
   return (
     <div className="smoothie-container p-sm-5">
   <section id="smoothies">
@@ -21,7 +23,7 @@ export default function Smoothies() {
           title="Tropical Paradise"
           text="Mango, Pineapple, coconut milk"
           buttonText="Add to Cart"
-          onButtonClick={() => alert("Opening Attack on Titan...")}
+          onButtonClick={() => navigate('/menu')}
           price={"$8.99"}
         />
       </div>
@@ -32,7 +34,7 @@ export default function Smoothies() {
           title="Berry Blast"
           text="Mixed berries, banana, yogurt"
           buttonText="Add to Cart"
-          onButtonClick={() => alert("Opening Attack on Titan...")}
+          onButtonClick={() => navigate('/menu')}
           price={"$10.99"}
         />
       </div>
@@ -43,7 +45,7 @@ export default function Smoothies() {
           title="Green Goddess"
           text="Spinach, kale, green apple, banana"
           buttonText="Add to Cart"
-          onButtonClick={() => alert("Opening Attack on Titan...")}
+          onButtonClick={() => navigate('/menu')}
           price={"$6.99"}
         />
       </div>
@@ -54,7 +56,7 @@ export default function Smoothies() {
           title="Choco Power"
           text="Chocolate , banana, protein "
           buttonText="Add to Cart"
-          onButtonClick={() => alert("Opening Attack on Titan...")}
+          onButtonClick={() => navigate('/menu')}
           price={"$12.99"}
         />
       </div>
