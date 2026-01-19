@@ -17,18 +17,18 @@ h2, h4, p {
 
 /* Cart Styling */
 
-.empty-cart {
+.empty-cart1 {
   padding: 40px 20px;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
+  border-radius: 30px;
   margin: 20px 0;
 }
 
-.cart-table {
+.cart-table1 {
   margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 30px;
   overflow: hidden;
 }
 

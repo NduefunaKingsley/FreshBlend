@@ -16,12 +16,12 @@ export default function CartPage() {
       <h2 className="text-white mb-4">🛒 Your Cart</h2>
 
       {cart.length === 0 ? (
-        <div className="empty-cart">
-          <p className="text-secondary">Your cart is empty. Start shopping!</p>
+        <div className="empty-cart1 p-4 rounded">
+          <p className="text-secondary text-center">Your cart is empty☹️.</p>
         </div>
       ) : (
         <>
-          <Table bordered hover responsive variant="dark" className="cart-table">
+          <Table  hover responsive variant="dark" className="cart-table1">
             <thead>
               <tr>
                 <th>Item</th>
