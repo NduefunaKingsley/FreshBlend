@@ -1,61 +1,61 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import './Cart.css';
+import React, { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
-// Create the Cart context
 const CartContext = createContext();
 
-// CartProvider component
-export const CartProvider = ({ children }) => {
-  // Initialize cart from localStorage
-  const [cart, setCart] = useState(() => {
-    try {
-      const saved = localStorage.getItem("cart");
-      return saved ? JSON.parse(saved) : [];
-    } catch (error) {
-      console.error("Failed to parse cart from localStorage:", error);
-      return [];
-    }
-  });
+export function CartProvider({ children }) {
+  const [cart, setCart] = useState([]);
 
-  // Persist cart to localStorage whenever it changes
-  useEffect(() => {
-    try {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    } catch (error) {
-      console.error("Failed to save cart to localStorage:", error);
-    }
-  }, [cart]);
-
-  // Function to add product to cart
-  const addToCart = (product) => {
-    setCart((prev) => {
-      const existing = prev.find((item) => item.id === product.id);
-
-      if (existing) {
-        // Increment quantity if item already exists
-        return prev.map((item) =>
-          item.id === product.id
-            ? { ...item, qty: item.qty + 1 }
-            : item
+  const addToCart = (item) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (existingItem) {
+        toast.info(`${item.title} quantity updated!`, {
+          position: "bottom-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+        return prevCart.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, qty: cartItem.qty + 1 }
+            : cartItem
         );
       }
-
-      // Add new item with qty = 1
-      return [...prev, { ...product, qty: 1 }];
+      toast.success(`✅ ${item.title} has been added to cart!`, {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return [...prevCart, { ...item, qty: 1 }];
     });
   };
 
-  // Function to remove a product from cart
-  const removeFromCart = (productId) => {
-    setCart((prev) => prev.filter((item) => item.id !== productId));
+  const removeFromCart = (itemId) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== itemId));
+    toast.error("Item removed from cart", {
+      position: "bottom-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
   };
 
-  // Function to update quantity of a product
-  const updateQuantity = (productId, qty) => {
-    if (qty <= 0) return removeFromCart(productId);
-    setCart((prev) =>
-      prev.map((item) =>
-        item.id === productId ? { ...item, qty } : item
+  const updateQuantity = (itemId, quantity) => {
+    if (quantity <= 0) {
+      removeFromCart(itemId);
+      return;
+    }
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === itemId ? { ...item, qty: quantity } : item
       )
     );
   };
@@ -65,7 +65,12 @@ export const CartProvider = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
-};
+}
 
-// Custom hook to use cart context
-export const useCart = () => useContext(CartContext);
+export function useCart() {
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error("useCart must be used within a CartProvider");
+  }
+  return context;
+}
