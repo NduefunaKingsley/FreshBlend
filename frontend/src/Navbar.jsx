@@ -30,7 +30,7 @@ function NavScrollExample() {
             <Link to="/cart" className="position-relative me-3">
               <FaOpencart className="nav-cart" />
               {cartCount > 0 && (
-                <span className="nav-span position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                   {cartCount}
                 </span>
               )}
