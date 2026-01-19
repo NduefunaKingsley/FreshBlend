@@ -14,3 +14,135 @@ h2, h4, p {
   border-radius: 50%;
   padding: 0.25rem 0.5rem;
 }
+
+/* Cart Styling */
+
+.empty-cart {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.cart-table {
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cart-item-row {
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-row:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.item-name {
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.item-price {
+  font-weight: 500;
+  vertical-align: middle;
+  color: #ffc107;
+}
+
+.qty-controls {
+  vertical-align: middle;
+}
+
+.qty-btn {
+  min-width: 32px;
+  padding: 4px 8px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.qty-btn:hover {
+  transform: scale(1.1);
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.qty-value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.subtotal {
+  font-weight: 600;
+  color: #28a745;
+  vertical-align: middle;
+}
+
+.action-btn {
+  vertical-align: middle;
+}
+
+.remove-btn {
+  font-weight: 600;
+  padding: 6px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 6px;
+}
+
+.remove-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.cart-total {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.total-amount {
+  color: #ffc107;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  font-weight: 600;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-table {
+    font-size: 0.9rem;
+  }
+
+  .qty-btn {
+    min-width: 28px;
+    padding: 2px 6px;
+    font-size: 0.9rem;
+  }
+
+  .remove-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .total-amount {
+    font-size: 1.2rem;
+  }
+}
