@@ -1,0 +1,102 @@
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #000000ee, #0000008c, #c5c3c300), url('./assets/images/logbackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.signin-container {
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 40px !important;
+    border-radius: 30px !important;
+    box-shadow: 0 8px 32px 0 rgba(34, 241, 7, 0.37) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.397) !important;
+    text-align: center;
+    color: rgba(194, 189, 189, 0.89);
+    width: 100% !important;
+    max-width: 420px !important;
+}
+
+.signin-container h2 {
+    font-weight: bold;
+    color: rgba(194, 189, 189, 0.89);
+}
+
+/* Bootstrap Form Control Styling */
+.signin-container .form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.397) !important;
+    color: rgba(194, 189, 189, 0.89) !important;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.signin-container .form-control:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.397) !important;
+    color: rgba(194, 189, 189, 0.89) !important;
+    box-shadow: 0 8px 32px 0 rgba(34, 241, 7, 0.37) !important;
+    outline: none !important;
+}
+
+.signin-container .form-control::placeholder {
+    color: rgba(194, 189, 189, 0.6);
+}
+
+/* Bootstrap Form Label Styling */
+.signin-container .form-label {
+    color: rgba(194, 189, 189, 0.89);
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.signin-form {
+    text-align: left;
+}
+
+/* Bootstrap Button Styling */
+.signin-container .btn {
+    width: 50% !important;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #33ff00 !important;
+    color: #000 !important;
+    transition: all 0.5s ease-in-out;
+    margin: 20px auto 0 !important;
+    display: block !important;
+}
+
+.signin-container .btn:hover {
+    transform: translateY(-5px);
+    background-color: black !important;
+    color: #33ff00 !important;
+    box-shadow: 0 0 15px #33ff00;
+}
+
+.signin-container a {
+    color: #33ff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin-container a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    color: rgba(194, 189, 189, 0.89);
+    margin-top: 15px;
+}
+
+
