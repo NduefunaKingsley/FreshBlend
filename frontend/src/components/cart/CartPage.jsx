@@ -17,7 +17,7 @@ export default function CartPage() {
 
       {cart.length === 0 ? (
         <div className="empty-cart">
-          <p className="text-secondary">Your cart is empty!☹️.</p>
+          <p className="text-secondary">Your cart is empty!☹️</p>
         </div>
       ) : (
         <>
@@ -86,7 +86,7 @@ export default function CartPage() {
           <div className="cart-total text-end text-white mt-4">
             <h4>Total: <span className="total-amount">${total.toFixed(2)}</span></h4>
             <Button variant="success" size="lg" className="checkout-btn mt-3">
-              Proceed to Checkout
+              Proceed to Payment
             </Button>
           </div>
         </>
