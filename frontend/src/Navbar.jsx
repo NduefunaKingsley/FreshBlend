@@ -36,7 +36,7 @@ function NavScrollExample() {
               )}
             </Link>
 
-            <Button variant="nav-btn" className='nav-btn'>Sign In</Button>
+            <Link to='/signin'><Button variant="nav-btn" className='nav-btn'>Sign In</Button></Link>
           </Form>
         </Navbar.Collapse>
       </Container>

@@ -1,7 +1,9 @@
-import React from 'react'
+import SignUp from '../components/log/SignUp.jsx'
 
 export default function SignUppage() {
   return (
-    <div>SignUppage</div>
+    <div>
+      <SignUp />
+    </div>
   )
 }
