@@ -18,8 +18,8 @@
     border: 1px solid rgba(255, 255, 255, 0.397) !important;
     text-align: center;
     color: rgba(194, 189, 189, 0.89);
-    width: 100% !important;
-    max-width: 420px !important;
+    width: 95% !important;
+    max-width: 350px !important;
 }
 
 .signin-container h2 {
